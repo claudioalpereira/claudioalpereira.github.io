@@ -15,7 +15,7 @@ $(function () {
 
 	 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Windows Phone|Opera Mini/i.test(navigator.userAgent) ) {
 		$.backstretch([
-			"img/background/1.jpg"
+			"img/background/a3.jpg"
 		]);
 	}
 	else {
