@@ -13,20 +13,13 @@ $(function () {
 	 * Background (Video)
 	 */
 
-	 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Windows Phone|Opera Mini/i.test(navigator.userAgent) ) {
-		$.backstretch([
-			"img/background/a3.jpg"
-		]);
-	}
-	else {
 		$('#home').tubular({
 			//videoId: 'y-ZeBO0ro8Q'
-			//videoId: 'VDxnOAD6S-U'
-			videoId: '4sQvNes-xzY'
+			videoId: 'VDxnOAD6S-U'
+			//videoId: '4sQvNes-xzY'
 			//videoId: 'okxxutnQ1k4'
 		}); // where videoId is the YouTube ID.
-	}
-
+	
 	/* ---------------------------------------------------------
 	 * WOW
 	 */
