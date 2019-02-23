@@ -22,6 +22,8 @@ $(function () {
 		$('#home').tubular({
 			//videoId: 'y-ZeBO0ro8Q'
 			videoId: 'VDxnOAD6S-U'
+			//videoId: '4sQvNes-xzY'
+			//videoId: 'okxxutnQ1k4'
 		}); // where videoId is the YouTube ID.
 	}
 
