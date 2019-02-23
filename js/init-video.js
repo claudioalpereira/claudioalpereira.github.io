@@ -67,11 +67,11 @@ $(function () {
 	 */
 
 	var description = {
-		weeks: "weeks",
-		days: "days",
-		hours: "hours",
-		minutes: "minutes",
-		seconds: "seconds"
+		weeks: "semana",
+		days: "dias",
+		hours: "horas",
+		minutes: "minutos",
+		seconds: "segundos"
 	};
 
 	// year/month/day
