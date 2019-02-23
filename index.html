@@ -45,6 +45,10 @@
 			</div>
 		</div>
 		
+		
+		<i id="mute_btn" class="settings-btn tubular-mute fa fa-volume-up"></i>
+		
+		<!--
 		<a href="#" class="settings-btn">
 			<i class="fa fa-cogs"></i>
 		</a>
@@ -62,18 +66,17 @@
 				</li>
 			</ul>
 		</div>
-		
+		-->
 		
 		<!-- Main -->
 		<section class="main text-center" id="home">
 			<div class="page">
 				<div class="wrapper">
 					<div class="container">
-						<img src="img/logo/logo.png" alt="Logo">
-						<h1 class="heading">coming soon</h1>
+						<img src="img/logo/logo.png" alt="Logo" style="height:3em">
+						<h1 class="heading">Vargos</h1>
 						<p>
-							Sed facilisis magna sapien.
-							Mauris interdum condimentum vestibulum.
+						Convívio Motocross
 						</p>
 						<div class="row">
 							<div id="countdown"></div>
@@ -384,9 +387,14 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/init-video.js"></script>
-		
+		<!--
 		<script src="./settings-panel.js"></script>
+		-->
 		
+					<script>
+			$("#mute_btn").click(function(ev){$(this).toggleClass("fa-volume-up fa-volume-off");});
+			</script>
+
 		
 	</body>
 </html>
