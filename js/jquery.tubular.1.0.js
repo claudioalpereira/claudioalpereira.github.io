@@ -104,6 +104,8 @@
             resize();
         })
 
+		
+
         $('body').on('click','.' + options.playButtonClass, function(e) { // play button
             e.preventDefault();
             player.playVideo();

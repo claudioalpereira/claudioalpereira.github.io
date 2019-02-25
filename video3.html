@@ -394,16 +394,15 @@
 		<script src="js/retina.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/init-video1.js"></script>
+		<script src="js/init-video3.js"></script>
 		<!--
 		<script src="./settings-panel.js"></script>
 		-->
 		
 					<script>
 			$("#mute_btn").click(function(ev){$(this).toggleClass("fa-volume-up fa-volume-off");});
-			
-			setTimeout(player.playVideo, 2000);
-			
+				$(document).ready(function(){player.playVideo();});
+
 			</script>
 
 		
