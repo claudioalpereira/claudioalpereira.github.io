@@ -1,4 +1,4 @@
-var cacheShell = 'shell-v9'; 
+var cacheShell = 'shell-v10'; 
 
 var filesToCache = [
   '/',

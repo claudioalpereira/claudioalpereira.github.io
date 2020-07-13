@@ -50,7 +50,7 @@ async function showNotification() {
 //			icon: 'mario.png'
 		});
 		noti.onclick = () => alert('clicked');
-	}
+	} else { alert("notification not permitted"); }
 }
 
 
