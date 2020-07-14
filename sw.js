@@ -16,6 +16,8 @@ self.addEventListener('install', function(e) {
   );
 });
 
+// When a new SW is activated, it means that no previous SW is in use anymore.
+// ... so, it is safe to clear all caches from previous SWs.
 self.addEventListener('activate', function(e) {
 
   var cacheToKeep = [cacheShell];
@@ -23,7 +25,7 @@ self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.keys().then(function(keylist) {
 		return Promise.all(keylist.map(function(key) {
-			if(cacheToKeep.indexOf(key) === -1){
+			if(cacheToKeep.indexOf(key) === -1){ // all new SW, have a different cache name
 				return caches.delete(key);
 			}
 		}));
@@ -40,7 +42,7 @@ self.addEventListener('fetch', e => {
   );
 });
 
-// used to notify the user of a new version
+// Called when the user is notified of a new version and clicks the 'Update' button
 self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
     self.skipWaiting();
