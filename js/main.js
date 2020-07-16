@@ -31,7 +31,7 @@ async function showNotification() {
 	if (result === 'granted') {
 		const noti = new Notification('Ola!', {
 			body: 'Sou eu.',
-//			icon: 'mario.png'
+			icon: 'img/hello-icon-128.png'
 		});
 		noti.onclick = () => alert('clicked');
 	} else { alert("notification not permitted"); }
