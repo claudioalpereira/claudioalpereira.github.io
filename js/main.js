@@ -30,9 +30,9 @@ async function showNotification() {
 	const result = await Notification.requestPermission();
 	if (result === 'granted') {
 		const noti = new Notification('Ola!', {
-			body: 'Sou eu.',
-			icon: 'img/hello-icon-192.png',
-			badge: 'img/hello-icon-72.png'
+			body: 'Sou eu.'//,
+//			icon: 'img/hello-icon-192.png',
+//			badge: 'img/hello-icon-72.png'
 //            actions: [
 //                {
 //                    action: 'coffee-action',
@@ -43,7 +43,7 @@ async function showNotification() {
 //            sound: "sound/smb_coin.wav",
 //            timestamp: Date.now()    
 		});
-		noti.onclick = () => alert('clicked');
+//		noti.onclick = () => alert('clicked');
 	} else { alert("notification not permitted"); }
 }
 
