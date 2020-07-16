@@ -32,17 +32,16 @@ async function showNotification() {
 		const noti = new Notification('Ola!', {
 			body: 'Sou eu.',
 			icon: 'img/hello-icon-192.png',
-			badge: 'img/hello-icon-72.png',
-            actions: [
-                {
-                    action: 'coffee-action',
-                    title: 'Coffee',
-                    icon: 'img/hello-icon-72.png'
-                }
-            ],
-            sound: "sound/smb_coin.wav",
-            timestamp: Date.now(),
-            
+			badge: 'img/hello-icon-72.png'
+//            actions: [
+//                {
+//                    action: 'coffee-action',
+//                    title: 'Coffee',
+//                    icon: 'img/hello-icon-72.png'
+//                }
+//            ],
+//            sound: "sound/smb_coin.wav",
+//            timestamp: Date.now()    
 		});
 		noti.onclick = () => alert('clicked');
 	} else { alert("notification not permitted"); }
