@@ -49,3 +49,10 @@ self.addEventListener("push", function(event) {
     console.log("Push event but no data");
   }
 });
+const showLocalNotification = (title, body, swRegistration) => {
+  const options = {
+    body
+    // here you can add more properties like icon, image, vibrate, etc.
+  };
+  swRegistration.showNotification(title, options);
+};
