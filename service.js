@@ -14,8 +14,9 @@ const urlB64ToUint8Array = base64String => {
 };
 
 const saveSubscription = async subscription => {
-  const SERVER_URL = "https://ouricocacheiro.herokuapp.com/save-subscription";
-  const response = await fetch(SERVER_URL, {
+  const SERVER_URL = "http://localhost:4000/save-subscription";
+ //const SERVER_URL = "https://ouricocacheiro.herokuapp.com/save-subscription";
+   const response = await fetch(SERVER_URL, {
     method: "post",
     headers: {
       "Content-Type": "application/json"
@@ -29,9 +30,9 @@ self.addEventListener("install", async () => {
   // This will be called only once when the service worker is installed for first time.
   try {
     const applicationServerKey = urlB64ToUint8Array(
-      "BJ5IxJBWdeqFDJTvrZ4wNRu7UY2XigDXjgiUBYEYVXDudxhEs0ReOJRBcBHsPYgZ5dyV8VjyqzbQKS8V7bUAglk"
+	  'BOTPzboE4C_uWvQyJfZb2wmGiZ353PfPPmiaht_krkseJMAoAOxnH-2ohIyC1om_bgUoNgNyqK6Q6ICk1KmgnI8'
     );
-    const options = { applicationServerKey, userVisibleOnly: true };
+	const options = { applicationServerKey, userVisibleOnly: true };
     const subscription = await self.registration.pushManager.subscribe(options);
     const response = await saveSubscription(subscription);
     console.log(response);
