@@ -1,18 +1,29 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Push Demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="index.js"></script>
+    <title>Hello World</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+    <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />  
 </head>
-
-<body>
-    <h1>Hello World</h1>
-    <button id="permission-btn" onclick="main()">Ask Permission</button>
+<body class="fullscreen">
+  <div class="container">
+    <button type="button" onclick="showNotification()">Show Notification</button>
+    <button type="button" id="btnA2HS" style="display:none">Add 2 Home Screen</button>
+    <h1 class="title">Hello World!</h1>
+  </div>
+  
+  <script src="js/main.js"></script>
 </body>
-
+    
 </html>
